@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Clinical & Authoritative Palette */
+  --color-primary: #0F6FDE;
+  --color-primary-dark: #0A4F9E;
+  --color-primary-light: #E8F2FD;
+  
+  --color-accent: #00A676;
+  --color-accent-dark: #007A56;
+  
+  --color-surface: #FFFFFF;
+  --color-canvas: #F5F7FA;
+  --color-canvas-alt: #EEF1F6;
+  
+  --color-text-primary: #0F172A;
+  --color-text-body: #334155;
+  --color-text-muted: #64748B;
+  
+  --color-border-base: #E2E8F0;
+  --color-border-hover: #CBD5E1;
+  
+  --color-danger: #DC2626;
+  --color-warning: #F59E0B;
+
+  /* Custom Shadows */
+  --shadow-medical: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-premium: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -4px rgba(0, 0, 0, 0.02), 0 0 0 1px rgba(0, 0, 0, 0.01);
+  --shadow-premium-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-canvas text-text-body font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-text-primary font-semibold tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-premium;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-2.5 rounded-lg font-medium transition-all hover:bg-primary-dark active:scale-95 shadow-sm;
+  }
+  
+  .btn-outline {
+    @apply border border-primary text-primary px-6 py-2.5 rounded-lg font-medium transition-all hover:bg-primary-light active:scale-95;
+  }
+
+  .badge-verified {
+    @apply inline-flex items-center gap-1 bg-accent/10 text-accent text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider;
+  }
+}
