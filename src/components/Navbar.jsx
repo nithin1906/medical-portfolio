@@ -26,17 +26,17 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-white/95 backdrop-blur-md border-b border-border-base shadow-sm px-8 py-3">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-8">
+      <nav className="bg-white/95 backdrop-blur-md border-b border-border-base shadow-sm px-4 md:px-8 py-3">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3 md:gap-8">
           {/* Logo & Location */}
-          <div className="flex items-center gap-8">
-            <Link to="/" className="flex items-center gap-2 cursor-pointer group">
-              <div className="bg-primary p-2 rounded-lg group-hover:rotate-12 transition-transform duration-300">
-                <div className="w-5 h-5 border-2 border-white rounded-sm relative">
-                  <div className="absolute inset-1 bg-white rounded-full"></div>
+          <div className="flex items-center gap-4 lg:gap-8 shrink-0">
+            <Link to="/" className="flex items-center gap-1.5 md:gap-2 cursor-pointer group">
+              <div className="bg-primary p-1.5 md:p-2 rounded-lg group-hover:rotate-12 transition-transform duration-300">
+                <div className="w-4 h-4 md:w-5 md:h-5 border-[1.5px] md:border-2 border-white rounded-sm relative">
+                  <div className="absolute inset-[2px] md:inset-1 bg-white rounded-full"></div>
                 </div>
               </div>
-              <span className="text-2xl font-extrabold tracking-tight text-text-primary">
+              <span className="text-lg md:text-2xl font-extrabold tracking-tight text-text-primary">
                 Medi<span className="text-primary">Care</span>
               </span>
             </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
           <SearchBar />
 
           {/* Actions */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 md:gap-6 shrink-0">
             <Link to="/dashboard" className="hidden lg:flex items-center gap-2 cursor-pointer hover:text-primary transition-colors font-medium text-sm group">
               <div className="w-8 h-8 rounded-full bg-canvas flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                 <User size={18} />
@@ -98,8 +98,8 @@ const Navbar = () => {
       </nav>
 
       {/* Category Nav */}
-      <div className="bg-white border-b border-border-base px-8 py-2 overflow-x-auto">
-        <div className="max-w-7xl mx-auto flex items-center gap-8 whitespace-nowrap scrollbar-hide">
+      <div className="bg-white border-b border-border-base px-4 md:px-8 py-2 overflow-x-auto">
+        <div className="max-w-7xl mx-auto flex items-center gap-5 md:gap-8 whitespace-nowrap scrollbar-hide">
           {[
             { name: 'Medicine', href: '#medicine' },
             { name: 'Lab Tests', href: '#lab-tests' },

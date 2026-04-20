@@ -34,7 +34,7 @@ const SearchBar = () => {
   }, []);
 
   return (
-    <div className="relative flex-grow max-w-2xl mx-8" ref={searchRef}>
+    <div className="relative flex-grow max-w-2xl mx-2 md:mx-4 lg:mx-8 min-w-0" ref={searchRef}>
       <div className="relative group">
         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-text-muted">
           <Search size={18} />
