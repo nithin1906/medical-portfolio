@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import CartDrawer from './components/CartDrawer'
+import { Analytics } from "@vercel/analytics/react"
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <Analytics />
     </div>
   )
 }
