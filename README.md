@@ -1,16 +1,79 @@
-# React + Vite
+# MediCare | High-Performance Medical E-Commerce Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, production-ready medical e-commerce platform built with **React 19**, **Vite**, and **Tailwind CSS 4**. This project serves as a high-fidelity portfolio piece demonstrating modern frontend architecture, secure coding practices, and high-quality UI/UX design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+**[Vercel Deployment URL will be here]**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+### 🔐 Security First (VibeSec Audited)
+- **Content Security Policy (CSP)**: Robust protection against XSS and unauthorized asset loading.
+- **Header Hardening**: Implemented `nosniff`, `Referrer-Policy`, and secure link attributes (`rel="noopener noreferrer"`) for safe external navigation.
+- **Dependency Integrity**: Clean `npm audit` with 0 vulnerabilities.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎨 Premium UI/UX
+- **Modern Medical Aesthetics**: Minimalist, high-trust design using a curated "Medical Blue" palette and professional studio assets.
+- **Dynamic Micro-interactions**: Smooth transitions and animations powered by **Framer Motion**.
+- **Responsive Location Intelligence**: A global `LocationContext` that synchronizes delivery guarantees across the Hero section and Navbar.
+- **Glassmorphism Design**: High-end translucent navigation and modal treatments.
+
+### 💊 E-Commerce Functional Mockups
+- **Smart Search**: Instant filtering across a database of medical products.
+- **Prescription Portal**: Mocked prescription upload and verification workflow.
+- **Interactive Cart**: Global state-managed cart with slide-out drawer.
+- **User Dashboard**: Professional overview of orders, refill schedules, and rewards.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Core**: React 19 (Hooks, Context API)
+- **Build Tool**: Vite 8+
+- **Styling**: Tailwind CSS 4 (Custom design tokens)
+- **Animations**: Framer Motion & GSAP
+- **Icons**: Lucide React
+- **Routing**: React Router 7
+
+---
+
+## 📦 Project Structure
+
+```text
+src/
+├── components/     # Reusable UI components
+├── context/        # Global state (Cart, Location)
+├── data/           # Static product and test databases
+├── pages/          # Page-level components (Home, Dashboard)
+└── assets/         # High-fidelity local medical assets
+```
+
+---
+
+## 🏁 Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/nithin1906/medical-portfolio.git
+   ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Run development server**:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📜 Portfolio Disclaimer
+This project is for **demonstration purposes only**. It is a frontend-heavy mockup designed to showcase professional coding standards, UI design, and security hygiene in a medical technology context. No actual medical transactions or data processing occur on the backend.
+
+---
+
+**Developed by [Nithin](https://github.com/nithin1906)**
