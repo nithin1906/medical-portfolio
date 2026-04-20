@@ -5,7 +5,7 @@ A premium, production-ready medical e-commerce platform built with **React 19**,
 ---
 
 ## 🚀 Live Demo
-**[Vercel Deployment URL will be here]**
+**https://medical-portfolio-inky.vercel.app/**
 
 ---
 
